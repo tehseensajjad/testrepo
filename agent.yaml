@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: agent-1
+  namespace: jenkins
+spec:
+  containers:
+    image: debian:bookworm
+    imagePullPolicy: IfNotPresent
+    command:
+    - sleep
+    args:
+    - infinity
